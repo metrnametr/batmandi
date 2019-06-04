@@ -7,11 +7,11 @@ class App extends React.Component{
     
     state = {
         searchWord: '',
-        page: 1,
-        searched: false
+        page: 1
     }
 
     toggleWord = (newWord) => {
+        this.setState({ page: 1})
         this.setState({ searchWord: newWord})
     }
 
@@ -19,16 +19,11 @@ class App extends React.Component{
         this.setState({ page: item})
     }
 
-    toggleSearched = (isSearched) => {
-        this.setState({
-            searched: isSearched
-        })
-    }
+
     render(){
         return(
             <div className='main'>
                 <Header 
-                    toggleSearched={this.toggleSearched}
                     searchWord={this.state.searchWord} 
                     toggleWord={this.toggleWord}/>
                 <Body  

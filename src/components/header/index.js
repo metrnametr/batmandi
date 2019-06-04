@@ -4,7 +4,6 @@ import './style.css'
 const Header = ({ searchWord, toggleWord, toggleSearched }) => {
 
     const toggleInput = (e) => {
-        toggleSearched(1)
         toggleWord(e.target.value)
     }
 
