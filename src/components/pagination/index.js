@@ -16,7 +16,7 @@ const Pagination = ({ page, togglePagination }) => {
     return(
         <div className='pagination'>
             <span onClick={() => (myPage > 1) ? prev() : null}> prev </span>
-            <span> { page} </span>
+            <span> { page } </span>
             <span onClick={next}> next </span>
         </div>
     )

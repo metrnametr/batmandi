@@ -4,7 +4,7 @@ const item = ({ search }) => {
     return(
         <div className='item'>
             <div className='img-container'>
-                <img className='poster' src={search.Poster} alt='poster'/>
+                <img className='poster' src={(search.Poster) ? search.Poster : './images/no_image.jpg'} alt='poster'/>
             </div> 
             <div className='def-container'>
                 <div className='def'> Title : {search.Title}</div>

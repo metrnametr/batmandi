@@ -19,14 +19,13 @@ class App extends React.Component{
         this.setState({ page: item})
     }
 
-
     render(){
         return(
             <div className='main'>
                 <Header 
                     searchWord={this.state.searchWord} 
                     toggleWord={this.toggleWord}/>
-                <Body  
+                <Body
                     searchWord={this.state.searchWord} 
                     page={this.state.page}/>
 
