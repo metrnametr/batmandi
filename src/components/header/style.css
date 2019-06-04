@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: #008B8B;
+    padding: 15px 10px;
+    color: white;
+    font-size: 1.2em;
+}
+.search-box{
+    width: 40%;
+}
+.search-box input{
+    width: 100%;
+    border: none;
+    height: 20px;
+}

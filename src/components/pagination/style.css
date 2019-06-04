@@ -1,0 +1,21 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.pagination span{
+    padding: 10px;
+    background: #008B8B;
+    color: white;
+    font-size: 1.2em;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.pagination:first-child{
+    margin-left: 0
+}
+
+.pagination span:nth-child(2){
+    cursor: auto;
+}
